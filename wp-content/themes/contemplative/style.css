@@ -39,6 +39,15 @@ main{
 	margin-right: 50px;
 }
 
+main.background{
+	background-image: url("img/tree.png");
+	background-size: cover;
+	background-color: Aqua;
+	width: 100%;
+	margin-right: 0;
+	overflow: scroll;
+}
+
 /* clear */
 .clear:before,
 .clear:after {
@@ -57,7 +66,7 @@ img {
 	vertical-align:bottom;
 }
 a {
-	color:red;
+	color: red;
 	text-decoration:none;
 }
 a:hover {
@@ -102,7 +111,7 @@ input:focus {
 /* nav */
 .nav {
 	font-size: 15px;
-	font-family: Arial;
+	font-family: Helvetica, sans-serif;
 	font-weight: bold;
 	width: 30%;
 	/*float: left;*/
@@ -127,8 +136,6 @@ ul{
     PAGES
 \*------------------------------------*/
 
-
-
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
@@ -143,7 +150,7 @@ img {
 
 @font-face {
 	font-family:'Garamond'; serif;
-	src:url('htdocs/wp-content/themes/html5blank-stable/fonts/AGaramondPro-Regular.otf');
+	src:url(fonts/AGaramondPro-Regular.otf);
     font-weight:normal;
     font-style:normal;
 }
