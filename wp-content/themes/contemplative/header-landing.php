@@ -26,11 +26,11 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+		<div class="wrapper background">
+			<img class="background__image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tree.png" />
 
 			<!-- header -->
-			<header class="header clear" role="banner">
-
+			<header class="header clear header--transparent" role="banner">
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">

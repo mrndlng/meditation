@@ -42,6 +42,7 @@
 			
 			<!-- nav -->
 			<nav class="nav" role="navigation">
+				<div class="nav--mobile">MENU</div>
 				<?php html5blank_nav(); ?>
 			</nav>
 
