@@ -27,7 +27,7 @@
 
 		<!-- wrapper -->
 		<div class="wrapper background">
-			<img class="background__image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tree.png" />
+			<img class="background__image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tree2.png" />
 
 			<!-- header -->
 			<header class="header clear header--transparent" role="banner">
@@ -35,7 +35,7 @@
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<h1><?php echo get_bloginfo('name'); ?></h1>
+							<h1 class="blogtitle"><?php echo get_bloginfo('name'); ?></h1>
 						</a>
 					</div>
 					<!-- /logo -->

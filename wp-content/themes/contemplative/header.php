@@ -35,7 +35,7 @@
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<h1><?php echo get_bloginfo('name'); ?></h1>
+							<h1 class="blogtitle"><?php echo get_bloginfo('name'); ?></h1>
 						</a>
 					</div>
 					<!-- /logo -->

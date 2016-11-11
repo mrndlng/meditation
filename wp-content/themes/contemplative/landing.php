@@ -1,5 +1,6 @@
 <?php /* Template Name: Landing */ ?>
 <?php get_header('landing'); ?>
 <main>
-	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien arcu, egestas. </p>
+	<!-- <a class="button" href="index.php">enter</a> -->
+	<!-- <h1 class="button">Enter</h1> -->
 </main>
