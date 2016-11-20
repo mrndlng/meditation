@@ -42,14 +42,15 @@
 			
 			<!-- nav -->
 			<nav class="nav" role="navigation">
-				<div class="nav--mobile">MENU</div>
+				<div class="nav--mobile">
+					<h4 class="nav__toggle"></h4>
 				<?php 	
 					wp_nav_menu(
 						array(
 							'theme_location'  => 'header-menu',
 							'menu'            => 'Main Menu',
 							'container'       => 'div',
-							'container_class' => 'menu-{menu slug}-container',
+							'container_class' => 'nav__menu--mobile',
 							'container_id'    => '',
 							'menu_class'      => 'menu',
 							'menu_id'         => '',
@@ -65,6 +66,31 @@
 							)
 						); 
 				?>
+				</div>
+				<div class="nav--desktop">
+				<?php 	
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'header-menu',
+							'menu'            => 'Main Menu',
+							'container'       => 'div',
+							'container_class' => 'menu--desktop',
+							'container_id'    => '',
+							'menu_class'      => 'menu',
+							'menu_id'         => '',
+							'echo'            => true,
+							'fallback_cb'     => 'wp_page_menu',
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul>%3$s</ul>',
+							'depth'           => 0,
+							'walker'          => ''
+							)
+						); 
+				?>
+				</div>
 			</nav>
 
 

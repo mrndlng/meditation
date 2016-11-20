@@ -15,7 +15,7 @@
 					<!-- post thumbnail -->
 					<?php if ( has_post_thumbnail($recent['ID'])) : // Check if thumbnail exists ?>
 						<a href="<?php the_permalink($recent['ID']); ?>" title="<?php echo $recent['post_title'] ?>">
-							<?php echo get_the_post_thumbnail($recent['ID'], array(1000,1000)); // Declare pixel size you need inside the array ?>
+							<?php echo get_the_post_thumbnail($recent['ID'], 'full'); // Declare pixel size you need inside the array ?>
 						</a>
 					<?php endif; ?>
 					<!-- /post thumbnail -->
@@ -39,6 +39,6 @@
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 
 <?php get_footer(); ?>

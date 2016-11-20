@@ -1,11 +1,6 @@
 /*
-	Theme Name: HTML5 Blank
-	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
-	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
-	Author URI: http://toddmotto.com
-	Tags: Blank, HTML5, CSS3
+	Theme Name: Contemplative Practice
+	Author: Miranda Leung
 
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
@@ -151,13 +146,63 @@ input:focus {
 	}
 }
 
+.nav__toggle:after {
+	content:'MENU';
+}
+
+.--open.nav__toggle:after {
+	content:'CLOSE';
+}
+
+.nav__toggle ~ ul {
+	display:none;
+}
+
+.nav__toggle.--open ~ ul {
+	display:block;
+}
+
+.nav__toggle.--open:before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	height:100vh;
+	width:100vw;
+	background-color: rgba(255,255,255,.9);
+	z-index:-1;
+}
+
 .nav--mobile {
 	display:block;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left:50px;
+}
+
+.nav--mobile li {
+	font-size:34px;
+}
+
+.nav--mobile .sub-menu li {
+	font-size:28px;
 }
 
 @media (min-width: 700px) { 
 	.nav--mobile {
 		display:none;
+	}
+}
+
+.nav--desktop {
+	display:none;
+}
+
+@media (min-width: 700px) { 
+	.nav--desktop {
+		display:block;
 	}
 }
 
@@ -183,7 +228,7 @@ ul{
     IMAGES
 \*------------------------------------*/
 img {
-	width: 100%;
+	width: auto;
 }
 
 
@@ -272,6 +317,22 @@ h2 {
     position:relative;
     width:100%;
     font-size: 72px;
+}
+
+.main__enter {
+	position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    width:auto;
+}
+
+.main__enter a {
+	color:white;
+}
+
+.main__enter a:hover {
+	color:yellow;
 }
 
 /*------------------------------------*\
