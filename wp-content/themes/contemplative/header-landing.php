@@ -33,7 +33,8 @@
 			<header class="header clear header--transparent" role="banner">
 					<!-- logo -->
 					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
+						<!-- <a href="<?php echo home_url(); ?>"> -->
+						<a href="<?php echo get_permalink( get_page_by_path( 'home' ) )?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 							<h1 class="blogtitle"><?php echo get_bloginfo('name'); ?></h1>
 						</a>

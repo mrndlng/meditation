@@ -1,6 +1,5 @@
 <?php /* Template Name: Landing */ ?>
 <?php get_header('landing'); ?>
 <main>
-	<!-- <a class="button" href="index.php">enter</a> -->
-	<!-- <h1 class="button">Enter</h1> -->
+	<a class="button" href="<?php echo get_permalink( get_page_by_path( 'home' ) )?>">enter</a>
 </main>
